@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets and local databases must never be committed
+.env
+*.db
+*.db-wal
+*.db-shm
+.streamlit/secrets.toml
+
+# Generated evaluation artifacts
+evaluation/results/*.json
+!evaluation/results/.gitkeep
+evaluation/results/_work/
+tests/_tmp/
+.apptmp/
+.tmp/
+pytest-cache-files-*/
+
+# Pytest caches
+.pytest_cache/
